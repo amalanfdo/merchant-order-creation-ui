@@ -4,7 +4,7 @@ import { Button, List, Text, TopNavigation, TopNavigationAction } from '@ui-kitt
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
 import { ArrowIosBackIcon } from '../../components/icons';
 import { Product } from '../meat-order/extra/data';
-import { CartItem } from '../../layouts/waiting-order/extra/cart-item.component';
+import { OrderResultCardItem } from '../../components/order-result-card-item';
 
 
 const initialProducts: Product[] = [
@@ -24,7 +24,7 @@ export const OrderHistoryScreen = ({ navigation }): React.ReactElement => {
   const [products, setProducts] = React.useState<Product[]>(initialProducts);
 
   const renderProductItem = (info: ListRenderItemInfo<Product>): React.ReactElement => (
-    <CartItem
+    <OrderResultCardItem
       style={styles.item}
       index={info.index}
       product={info.item}

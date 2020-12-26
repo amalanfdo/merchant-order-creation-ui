@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { Revenue } from './../scenes/revenue/revenue.component';
-import { OrderHistoryScreen } from './../scenes/revenue/order-history-screen.component';
+import { Revenue } from '../scenes/revenue/revenue.scene';
+import { OrderHistoryScreen } from '../scenes/order-history/order-history.scene';
 
 const TopTab = createMaterialTopTabNavigator();
 const Stack = createStackNavigator();

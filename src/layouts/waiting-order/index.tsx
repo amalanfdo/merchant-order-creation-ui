@@ -1,10 +1,9 @@
 import React from 'react';
-import { ListRenderItemInfo, StyleSheet, View } from 'react-native';
-import { Button, Datepicker, Divider, Icon, Input, Layout, List, ListItem, Text, Toggle, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
+import {  StyleSheet, View } from 'react-native';
+import { Button, Datepicker, Divider, Icon, Input, Layout, List, ListItem, Text, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
-import { MenuIcon ,ArrowIosForwardIcon,ArrowIosBackIcon, CloseIcon ,SuccessIcon} from '../../components/icons';
+import { MenuIcon ,ArrowIosForwardIcon,ArrowIosBackIcon} from '../../components/icons';
 import { Product } from './../../model/product-item';
-import { OrderResultCardItem } from './../../components/order-result-card-item';
 
 const initialProducts: Product[] = [
   Product.boneLess(),

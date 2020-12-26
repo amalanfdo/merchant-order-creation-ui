@@ -4,8 +4,6 @@ import { Button, Datepicker, Divider, Icon, Input, Layout, List, ListItem, Text,
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
 import { MenuIcon ,ArrowIosForwardIcon,ArrowIosBackIcon, CloseIcon ,SuccessIcon} from '../../components/icons';
 import { Product } from './../revenue/extra/data';
-import { CartItem } from './../revenue/extra/cart-item.component';
-import { OrderResultCardItem } from '../../components/order-result-card-item';
 
 const initialProducts: Product[] = [
   Product.boneLess(),
@@ -54,14 +52,6 @@ export default ({ navigation }): React.ReactElement => {
       description={item.description}
       icon={renderItemIcon}
       accessory={renderItemAccessory}
-    />
-  );
-  
-  const renderProductItem = (info: ListRenderItemInfo<Product>): React.ReactElement => (
-    <OrderResultCardItem
-      style={styles.item}
-      index={info.index}
-      product={info.item}
     />
   );
 

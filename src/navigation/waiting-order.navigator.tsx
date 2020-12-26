@@ -1,8 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { Revenue } from './../scenes/revenue/revenue.component';
-import { OrderHistoryScreen } from './../scenes/revenue/order-history-screen.component';
 import { WaitingOrder } from '../scenes/waiting-order/waiting-order.scene';
 import { OrderConfirmation } from '../scenes/waiting-order/order-confirmation.scene';
 
