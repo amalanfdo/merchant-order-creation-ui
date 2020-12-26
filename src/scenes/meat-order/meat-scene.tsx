@@ -5,6 +5,19 @@ import { SafeAreaLayout } from '../../components/safe-area-layout.component';
 import { MenuIcon } from '../../components/icons';
 import { Product } from './extra/data';
 import { CartItem } from './extra/cart-item.component';
+import firebase from "firebase";
+
+var firebaseConfig = {
+  apiKey: "AIzaSyDiwZTvLCoG7zDHPPSuOne78VJfbfIPpEU",
+  authDomain: "meat-merchant-api.firebaseapp.com",
+  projectId: "meat-merchant-api",
+  storageBucket: "meat-merchant-api.appspot.com",
+  messagingSenderId: "534522870736",
+  appId: "1:534522870736:web:ee4d552adf85373224d7d5",
+  measurementId: "G-5K5CWCJ9H5"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 const initialProducts: Product[] = [
   Product.boneLess(),
@@ -13,7 +26,9 @@ const initialProducts: Product[] = [
 
 export const MeatScene = (props): React.ReactElement => {
 
-  
+  const db = firebase.firestore();
+ 
+
   const [date, setDate] = React.useState(new Date());
   const [products, setProducts] = React.useState<Product[]>(initialProducts);
   const [value, setValue] = React.useState('');

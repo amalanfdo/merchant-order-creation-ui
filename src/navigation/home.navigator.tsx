@@ -7,7 +7,6 @@ import {
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { HomeBottomNavigation } from '../scenes/home/home-bottom-navigation.component';
 import { HomeDrawer } from '../scenes/home/home-drawer.component';
-import { LibrariesScreen } from '../scenes/libraries/libraries.component';
 import { MeatScene } from '../scenes/meat-order/meat-scene';
 import { ChickenScene } from '../scenes/meat-order/chicken-scene';
 import { FishScene } from '../scenes/meat-order/fish-scene';
@@ -61,7 +60,7 @@ export const HomeNavigator = (): React.ReactElement => (
     <Drawer.Screen name='order_canceled' component={CanceledOrderNavigator} />
     <Drawer.Screen name='contact_us' component={ContactUs} />
     {/* <Drawer.Screen name='order_autocreation' component={LibrariesScreen} /> */}
-    <Drawer.Screen name='Login' component={LibrariesScreen}/> 
-    <Drawer.Screen name='Logout' component={LibrariesScreen}/>
+    <Drawer.Screen name='Login' component={OrderHistory}/>  
+    <Drawer.Screen name='Logout' component={OrderHistory}/>
   </Drawer.Navigator>
 );
