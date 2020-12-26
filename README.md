@@ -1,8 +1,8 @@
 
 
 To Run the Application 
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy unrestricted
-
-expo start
+  1. open cmd in admin mode
+  2. Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy unrestricted
+  3. expo start
 
 
