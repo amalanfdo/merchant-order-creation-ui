@@ -1,5 +1,18 @@
+I want To Thank the UI Kitten teams ...giving this awesome framework
+and also firebase giving wonderful database support for small scale business
 
+<br/>
+<br/>
+  Reference the documentation <br/>
+      https://akveo.github.io/react-native-ui-kitten/<br/>
+      https://github.com/akveo/react-native-ui-kitten<br/>
+      https://firebase.google.com/docs<br/>
+<br/>
 
+    To Install the project
+        1. clone the project
+        2. npm install
+  
 To Run the Application 
   1. open cmd in admin mode
   2. Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy unrestricted
