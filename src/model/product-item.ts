@@ -16,7 +16,7 @@ export class Product {
       0,
       'Mutton Flesh',
       'Bone Less Fresh Meat',
-      require('../assets/image-product-1.png'),
+      require('../assets/product-image/image-product-1.png'),
       750,
       true,
     );
@@ -27,7 +27,7 @@ export class Product {
       1,
       'Mutton Flesh',
       'Bone Fresh Meat',
-      require('../assets/image-product-1.png'),
+      require('../assets/product-image/image-product-1.png'),
       950,
       false,
     );

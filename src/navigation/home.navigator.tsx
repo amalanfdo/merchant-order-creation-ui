@@ -10,7 +10,7 @@ import { HomeDrawer } from '../scenes/home/home-drawer.component';
 import { MeatScene } from '../scenes/meat-order/meat-scene';
 import { ChickenScene } from '../scenes/meat-order/chicken-scene';
 import { FishScene } from '../scenes/meat-order/fish-scene';
-import { WaitingOrder } from '../scenes/waiting-order/waiting-order.component';
+import { WaitingOrder } from '../scenes/waiting-order/waiting-order.scene';
 import { OrderHistory } from './order-history.navigator';
 import { WaitingOrderNavigator } from './waiting-order.navigator';
 import { CanceledOrderNavigator } from './canceled-order.navigator';

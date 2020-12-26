@@ -4,7 +4,6 @@ import { Button, Datepicker, Divider, Icon, Input, Layout, List, ListItem, Text,
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
 import { MenuIcon ,ArrowIosForwardIcon,ArrowIosBackIcon, CloseIcon ,SuccessIcon} from '../../components/icons';
 import { Product } from './extra/data';
-import { CartItem } from './extra/cart-item.component';
 import { OrderResultCardItem } from '../../components/order-result-card-item';
 
 const initialProducts: Product[] = [

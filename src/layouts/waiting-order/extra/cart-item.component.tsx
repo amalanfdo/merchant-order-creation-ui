@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import { Icon, Input, ListItem, ListItemProps, Text, Toggle } from '@ui-kitten/components';
-import { Product } from './data';
+import { Product } from './../../../model/product-item';
 
 export type CartItemProps = ListItemProps & {
   index: number;

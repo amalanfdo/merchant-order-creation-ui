@@ -23,7 +23,7 @@ export const OrderConfirmation = ({ navigation }): React.ReactElement => {
         subtitle= 'Order Confirmation'
         leftControl={renderBackAction()}
       />
-      <ContentView/>
+      <ContentView navigation = {navigation} />
     </SafeAreaLayout>
   );
 };

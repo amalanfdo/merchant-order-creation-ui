@@ -3,8 +3,7 @@ import { ListRenderItemInfo, StyleSheet, View } from 'react-native';
 import { Button, Datepicker, Divider, Icon, Input, Layout, List, ListItem, Text, Toggle, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
 import { MenuIcon ,ArrowIosForwardIcon,ArrowIosBackIcon, CloseIcon ,SuccessIcon} from '../../components/icons';
-import { Product } from './extra/data';
-import { CartItem } from './extra/cart-item.component';
+import { Product } from './../../model/product-item';
 import { OrderResultCardItem } from './../../components/order-result-card-item';
 
 const initialProducts: Product[] = [
@@ -65,14 +64,6 @@ export default ({ navigation }): React.ReactElement => {
     />
   );
   
-  const renderProductItem = (info: ListRenderItemInfo<Product>): React.ReactElement => (
-    <OrderResultCardItem
-      style={styles.item}
-      index={info.index}
-      product={info.item}
-    />
-  );
-
   return (
     <SafeAreaLayout
       style={styles.safeArea}
