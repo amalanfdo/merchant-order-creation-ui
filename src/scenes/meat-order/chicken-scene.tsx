@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Divider, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
-import { MenuGridList } from '../../components/menu-grid-list.component';
 import { MenuIcon } from '../../components/icons';
 
 export const ChickenScene = (props): React.ReactElement => {
@@ -23,10 +22,6 @@ export const ChickenScene = (props): React.ReactElement => {
         leftControl={renderDrawerAction()}
       />
       <Divider/>
-      {/* <MenuGridList
-        data={data}
-        onItemPress={onItemPress}
-      /> */}
     </SafeAreaLayout>
   );
 };

@@ -3,9 +3,9 @@ import { ListRenderItemInfo, StyleSheet, View } from 'react-native';
 import { Button, Datepicker, Divider, Icon, Input, Layout, List, Text, Toggle, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
 import { MenuIcon } from '../../components/icons';
-import { Product } from './extra/data';
-import { CartItem } from './extra/cart-item.component';
+import { Product } from './../../model/product-item';
 import firebase from "firebase";
+import { OrderConfirmationItem } from '../../components/order-confirmation.component';
 
 var firebaseConfig = {
   apiKey: "AIzaSyDiwZTvLCoG7zDHPPSuOne78VJfbfIPpEU",
@@ -49,7 +49,7 @@ export const MeatScene = (props): React.ReactElement => {
   );
 
   const renderProductItem = (info: ListRenderItemInfo<Product>): React.ReactElement => (
-    <CartItem
+    <OrderConfirmationItem
       style={styles.item}
       index={info.index}
       product={info.item}

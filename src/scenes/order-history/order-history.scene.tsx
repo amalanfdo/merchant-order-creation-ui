@@ -3,7 +3,7 @@ import { ListRenderItemInfo, StyleSheet, View } from 'react-native';
 import { Button, List, Text, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
 import { ArrowIosBackIcon } from '../../components/icons';
-import { Product } from '../meat-order/extra/data';
+import { Product } from '../../model/product-item';
 import { OrderResultCardItem } from '../../components/order-result-card-item';
 
 

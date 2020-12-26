@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import { Icon, Input, ListItem, ListItemProps, Text, Toggle } from '@ui-kitten/components';
-import { Product } from './data';
+import { Product } from './../model/product-item';
 
 export type CartItemProps = ListItemProps & {
   index: number;
@@ -18,7 +18,7 @@ const useToggleState = (initialState = false) => {
   return { checked, onChange: onCheckedChange };
 };
 
-export const CartItem = (props: CartItemProps): React.ReactElement => {
+export const OrderConfirmationItem = (props: CartItemProps): React.ReactElement => {
 
   const { style, product, index, ...listItemProps } = props;
 
@@ -38,40 +38,31 @@ export const CartItem = (props: CartItemProps): React.ReactElement => {
         style={styles.image}
         source={product.image}
       />
-      <View style={{flex: 1, height: '100%'}}>
-       <Text
-
-            style={{flex: 1,margin:4}}
+      <View style={{flex: 1, flexDirection: 'column'}}>
+        <View style={styles.detailsContainer}>
+          <Text
             category='s1'>
             {product.title}
-       </Text>
-       <Text
+          </Text>
+          <Toggle
+          status='success'
+          {...successToggleState}>
+        </Toggle>
+      </View>
+        <Text
           style={styles.descriptionContainer}
           appearance='hint'
           category='p2'>
           {product.subtitle}
         </Text>
-        <View style={{
-                  flexDirection:"row",
-                  justifyContent:'space-between',
-                  margin:5}}>
-          <Text>
-              2 kg
-          </Text>
-          <Text>
-              *              
-          </Text>
-          <Text>
-              300 / per kg
-          </Text>
-          <Text>
-              =              
-          </Text>
-          <Text>
-              600
-          </Text>
-        </View>
       </View>
+      <Input
+            value={value}
+            status='primary'
+            style={styles.amountAlign}
+            placeholder='Amount'
+            onChangeText={nextValue => setValue(nextValue)}
+      />
     </ListItem>
   );
 };
@@ -93,7 +84,6 @@ const styles = StyleSheet.create({
     padding:5,
   },
   descriptionContainer: {
-    flex: 3,
     padding:5,
   },
   amountAlign:{

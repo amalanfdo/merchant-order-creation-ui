@@ -326,3 +326,10 @@ export const AssetTopNavigationDarkIcon = (style: ImageStyle): IconElement => (
   <Icon {...style} pack='app' name='top-navigation-dark'/>
 );
 
+export const MinusIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='minus'/>
+);
+
+export const PlusIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='plus'/>
+);
