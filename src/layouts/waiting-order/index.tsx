@@ -107,11 +107,6 @@ export default ({ navigation }): React.ReactElement => {
           />
         </View>
       </View>
-      {/* <List
-        style={{margin:5}}
-        data={products}
-        renderItem={renderProductItem}
-      /> */}
        <List
         data={orderArray}
         renderItem={renderItem}
